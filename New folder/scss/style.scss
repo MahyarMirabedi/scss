@@ -1,0 +1,50 @@
+@import "reset";
+@import "variables"
+// $bgcolor: dark;
+// $textcolor: rgb(255, 10, 10);
+//   body{
+//     @if $bgcolor ==light{
+//         background-color: white;
+//         color: $textcolor;
+//     }
+//     @else if $bgcolor ==dark{
+//         background-color: black;
+//         color: $textcolor;
+//     }
+//   }
+
+.btn {
+  @include bg($Basic-color, black)
+}
+
+.btn-primary {
+  @include bg( $primary-color, white)
+}
+
+.btn-secondary {
+  @include bg( $secondary-color, white)
+}
+
+.btn-success {
+  @include bg( $success-color, white)
+}
+
+.btn-info {
+  @include bg( $info-color, black)
+}
+
+.btn-warning {
+  @include bg($warning-color, black)
+}
+
+.btn-danger {
+  @include bg($danger-color, white)
+}
+
+.btn-dark {
+  @include bg($dark-color, white)
+}
+
+.btn-light {
+  @include bg($light-color, black)
+}
